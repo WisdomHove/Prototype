@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using Prototype.Models;
 
 namespace Prototype.Data
@@ -14,6 +15,6 @@ namespace Prototype.Data
         {
         }
 
-        public DbSet<Prototype.Models.Supplier> Supplier { get; set; } = default!;
+        public DbSet<Prototype.Models.Supplier>? Supplier { get; set; } 
     }
 }
